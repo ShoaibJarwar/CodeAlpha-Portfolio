@@ -41,3 +41,10 @@ const toggleBtn = document.getElementById("theme-toggle");
 toggleBtn.onclick = () => {
   document.body.classList.toggle("dark-mode");
 };
+
+const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
