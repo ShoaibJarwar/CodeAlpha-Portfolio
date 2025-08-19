@@ -1,0 +1,155 @@
+:root {
+  --bg: #ffffff;
+  --text: #111;
+  --primary: #007bff;
+  --nav-bg: #222;
+  --nav-text: #fff;
+  --section-bg: #f9f9f9;
+}
+
+body.dark-mode {
+  --bg: #121212;
+  --text: #f0f0f0;
+  --primary: #1e90ff;
+  --nav-bg: #1a1a1a;
+  --section-bg: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--nav-bg);
+  padding: 10px 20px;
+  color: var(--nav-text);
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: var(--nav-text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section {
+  padding: 60px 20px;
+  background: var(--section-bg);
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.skill-list li {
+  background: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+  background: var(--bg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-card div {
+  padding: 10px;
+  flex: 1;
+  text-align: left;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  text-align: center;
+  padding: 15px;
+}
+
+#theme-toggle, #scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#scrollTopBtn {
+  right: 80px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
