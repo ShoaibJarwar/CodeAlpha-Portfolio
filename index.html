@@ -1,134 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shoaib Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <!-- Toggle Theme -->
-  <button id="theme-toggle" title="Toggle Dark Mode">🌓</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoaib Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Toggle Theme -->
+    <button id="theme-toggle" title="Toggle Dark Mode">🌓</button>
 
-  <!-- Scroll to Top -->
-  <button id="scrollTopBtn" title="Go to top">⬆️</button>
+    <!-- Scroll to Top -->
+    <button id="scrollTopBtn" title="Go to top">⬆️</button>
 
-  <!-- Navigation -->
-  <nav>
-    <h1>Shoaib</h1>
+    <!-- Navigation -->
+    <nav>
+      <h1>Shoaib</h1>
 
-    <!-- Hamburger Icon -->
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-    <ul id="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Home -->
-  <section id="home">
-    <h2>Hi, I'm Shoaib</h2>
-    <p><span id="typing"></span></p>
-  </section>
-
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm passionate about creating clean, user-friendly websites using HTML, CSS, JavaScript, React, and more. I enjoy building engaging digital experiences and solving real-world problems through code.</p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skill-list">
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>React.js</li>
-      <li>PHP</li>
-      <li>Django</li>
-      <li>Bootstrap</li>
-      <li>WordPress</li>
-    </ul>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-      <img src="./images/Calculator.png" alt="Calculator Project">
-      <div>
-        <h3>Calculator</h3>
-        <p>A responsive, themed calculator with scientific operations built using vanilla JS.</p>
-        <a href="https://github.com/ShoaibJarwar/CodeAlpha-Calculator" target="_blank">GitHub</a> |
-        <a href="https://ShoaibJarwar.github.io/CodeAlpha-Calculator" target="_blank">Live</a>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </div>
 
-    <div class="project-card">
-      <img src="./images/ImageGallery.png" alt="Image Gallery">
-      <div>
-        <h3>Image Gallery</h3>
-        <p>Filterable, lightbox-enabled image gallery with dark mode and thumbnail previews.</p>
-        <a href="https://github.com/ShoaibJarwar/CodeAlpha-ImageGallery" target="_blank">GitHub</a> |
-        <a href="https://ShoaibJarwar.github.io/CodeAlpha-ImageGallery" target="_blank">Live</a>
+      <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <!-- Home -->
+      <section id="home">
+        <h2>Hi, I'm Shoaib</h2>
+        <p><span id="typing"></span></p>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I'm passionate about creating clean, user-friendly websites using
+          HTML, CSS, JavaScript, React, and more. I enjoy building engaging
+          digital experiences and solving real-world problems through code.
+        </p>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React.js</li>
+          <li>PHP</li>
+          <li>Django</li>
+          <li>Bootstrap</li>
+          <li>WordPress</li>
+        </ul>
+      </section>
+    </section>
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <img src="./images/Calculator.png" alt="Calculator Project" />
+        <div>
+          <h3>Calculator</h3>
+          <p>
+            A responsive, themed calculator with scientific operations built
+            using vanilla JS.
+          </p>
+          <a
+            href="https://github.com/ShoaibJarwar/CodeAlpha-Calculator"
+            target="_blank"
+            >GitHub</a
+          >
+          |
+          <a
+            href="https://ShoaibJarwar.github.io/CodeAlpha-Calculator"
+            target="_blank"
+            >Live</a
+          >
+        </div>
       </div>
-    </div>
 
-    <div class="project-card">
-      <img src="./images/Kresite.png" alt="Kresite Website">
-      <div>
-        <h3>Kresite Website</h3>
-        <p>A fully responsive business website deployed using GitHub Pages.</p>
-        <a href="https://github.com/ShoaibJarwar/kresite" target="_blank">GitHub</a> |
-        <a href="https://ShoaibJarwar.github.io/KRESITE" target="_blank">Live</a>
+      <div class="project-card">
+        <img src="./images/ImageGallery.png" alt="Image Gallery" />
+        <div>
+          <h3>Image Gallery</h3>
+          <p>
+            Filterable, lightbox-enabled image gallery with dark mode and
+            thumbnail previews.
+          </p>
+          <a
+            href="https://github.com/ShoaibJarwar/CodeAlpha-ImageGallery"
+            target="_blank"
+            >GitHub</a
+          >
+          |
+          <a
+            href="https://ShoaibJarwar.github.io/CodeAlpha-ImageGallery"
+            target="_blank"
+            >Live</a
+          >
+        </div>
       </div>
-    </div>
-    <div class="project-card">
-      <img src="./images/MusicPlayer.png" alt="MusicPlayer Website">
-      <div>
-        <h3>MusicPlayer Website</h3>
-        <p>A fully responsive business website deployed using GitHub Pages.</p>
-        <a href="https://github.com/ShoaibJarwar/CodeAlpha-MusicPlayer" target="_blank">GitHub</a> |
-        <a href="https://ShoaibJarwar.github.io/CodeAlpha-MusicPlayer" target="_blank">Live</a>
+
+      <div class="project-card">
+        <img src="./images/Kresite.png" alt="Kresite Website" />
+        <div>
+          <h3>Kresite Website</h3>
+          <p>
+            A fully responsive business website deployed using GitHub Pages.
+          </p>
+          <a href="https://github.com/ShoaibJarwar/kresite" target="_blank"
+            >GitHub</a
+          >
+          |
+          <a href="https://ShoaibJarwar.github.io/KRESITE" target="_blank"
+            >Live</a
+          >
+        </div>
       </div>
-    </div>
-
-    <div class="project-card">
-      <img src="./images/task-manager.png" alt="To-Do List">
-      <div>
-        <h3>React To-Do List</h3>
-        <p>A to-do list application built with React, featuring task management and filters.</p>
-        <a href="https://github.com/ShoaibJarwar/task-manager" target="_blank">GitHub</a> |
-        <a href="coming.html" target="_blank">Live</a>
+      <div class="project-card">
+        <img src="./images/MusicPlayer.png" alt="MusicPlayer Website" />
+        <div>
+          <h3>MusicPlayer Website</h3>
+          <p>
+            A fully responsive business website deployed using GitHub Pages.
+          </p>
+          <a
+            href="https://github.com/ShoaibJarwar/CodeAlpha-MusicPlayer"
+            target="_blank"
+            >GitHub</a
+          >
+          |
+          <a
+            href="https://ShoaibJarwar.github.io/CodeAlpha-MusicPlayer"
+            target="_blank"
+            >Live</a
+          >
+        </div>
       </div>
-    </div>
 
-  </section>
+      <div class="project-card">
+        <img src="./images/task-manager.png" alt="To-Do List" />
+        <div>
+          <h3>React To-Do List</h3>
+          <p>
+            A to-do list application built with React, featuring task management
+            and filters.
+          </p>
+          <a href="https://github.com/ShoaibJarwar/task-manager" target="_blank"
+            >GitHub</a
+          >
+          |
+          <a href="coming.html" target="_blank">Live</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
-  <footer>
-    <p>© 2025 Shoaib. Built with ❤️</p>
-  </footer>
-</body>
+    <footer>
+      <p>© 2025 Shoaib. Built with ❤️</p>
+    </footer>
+  </body>
 </html>

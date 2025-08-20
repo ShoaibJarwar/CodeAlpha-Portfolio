@@ -63,10 +63,33 @@ nav ul li a {
   border-radius: 3px;
 }
 
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+
+#about, #typing p{
+  font-weight: 400;
+  font-size: larger;
+}
+
+#home, #about, #skills{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  /* max-width: 800px; */
+  width: 800px;
+}
+
 section {
   padding: 60px 20px;
   background: var(--section-bg);
   text-align: center;
+  /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
 }
 
 .skill-list {

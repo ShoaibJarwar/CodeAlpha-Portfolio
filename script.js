@@ -1,6 +1,6 @@
 // Typing Animation
 const typingElement = document.getElementById("typing");
-const words = ["Frontend Developer", "ReactJS Enthusiast", "JavaScript Coder"];
+const words = ["Frontend Developer ", "ReactJS Enthusiast ", "JavaScript Coder "];
 let i = 0, j = 0, current = "", isDeleting = false;
 
 function type() {
