@@ -30,6 +30,9 @@ nav {
   background: var(--nav-bg);
   padding: 10px 20px;
   color: var(--nav-text);
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 nav ul {
@@ -159,6 +162,9 @@ footer {
   color: var(--nav-text);
   text-align: center;
   padding: 15px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
 }
 
 #theme-toggle, #scrollTopBtn {
